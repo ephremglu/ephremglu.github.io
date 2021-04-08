@@ -74,8 +74,8 @@
     	<div class="container">
     		<div class="row d-flex no-gutters">
 
-				<div class="img d-flex align-self-stretch align-items-center">
-					<img src="images/CoverPhoto.png" width="390" height="520">
+				<div class="img d-flex align-self-stretch justify-content-center align-items-center">
+					<img src="images/CoverPhoto.png" width="390" height="520" style= "position: relative; right:3px;">
 				</div>
     			<!-- <div class="col-md-5 col-lg-5 d-flex">
     				<div class="img-about img d-flex align-items-stretch">
@@ -113,7 +113,14 @@
     	<div class="container">
     		<div class="row">
     			<div class="col-md-3">
-				    <nav id="navi">
+					<style>
+						@media (max-width: 900px) {
+						  .hidden-mobile {
+							display: none;
+						  }
+						}
+					</style>
+				    <nav id="navi" class="hidden-mobile">
 					    <ul>
 					      <li><a href="#education">Education</a></li>
 					      <li><a href="#experience">Experience</a></li>
@@ -238,146 +245,182 @@
 						<section class="ftco-section ftco-resume" id="resume-section">
 							<div class="container">
 								<div id="skills" class= "page three">
-								<!-- <style type="text/css">
+								<style type="text/css">
 									.ptab {
-										margin-left: 120px;
+										margin-left: 20px;
 									}
 									.tab {
 										white-space: nowrap;
-										margin-left: 70px;
+										margin-left: 10px;
 									}
 									#myDIV {
-										width: 700px;
+										width: auto;
 									}
-								</style> -->
+								</style>
 								
 								<div class="col-sm-3 ftco-animate"> 
 									<h2 class="heading">Skills</h2>
 								</div>
 								
 								<div class="resume-wrap d-flex ftco-animate">
-									<!-- <div class="text pl-3"> -->
-										<div class="col-sm-3 ftco-animate">
+									<div class="text pl-3">
+										<div class="tab" id="myDIV">
 											<h5><strong>Tableau</strong></h5>
-												<span class="ptab" id="myDIV">
-													<p>Advanced knowledge and experience using Tableau to create complex dashboards and analyses. Also Tableau certified as a
-														Tableau Desktop Specialist. View my Tableau credentials 
-														<a href="https://www.youracclaim.com/badges/c286a441-93a7-4f98-8ee1-cd4f46ddb902?source=linked_in_profile">
-															here.
-														</a>
-													</p>
-												</span>
 										</div>
-									<!-- </div> -->
+										<div class="ptab" id="myDIV">
+											<span>
+												<p>Advanced knowledge and experience using Tableau to create complex dashboards and analyses. Also Tableau certified as a
+													Tableau Desktop Specialist. View my Tableau credentials 
+													<a href="https://www.youracclaim.com/badges/c286a441-93a7-4f98-8ee1-cd4f46ddb902?source=linked_in_profile">
+														here.
+													</a>
+												</p>
+											</span>
+										</div>
+									</div>
 								</div>
 
 								<div class="resume-wrap d-flex ftco-animate">
-									<div class="col-sm-3 ftco-animate">
-										<h5><strong>Minitab</strong></h5>
-											<span class="ptab" id="myDIV">
+									<div class="text pl-3">
+										<div class="tab" id="myDIV">
+											<h5><strong>Minitab</strong></h5>
+										</div>
+										<div class="ptab" id="myDIV">
+											<span>
 												<p>Proficient in using Minitab for data analysis and visualization.</p>
 											</span>
+										</div>
 									</div>
 								</div>
 
 								<div class="resume-wrap d-flex ftco-animate">
-									<div class="col-sm-3 ftco-animate">
-										<h5><strong>SQL</strong></h5>
-											<span class="ptab" id="myDIV">
+									<div class="text pl-3">
+										<div class="tab" id="myDIV">
+											<h5><strong>SQL</strong></h5>
+										</div>
+										<div class="ptab" id="myDIV">
+											<span>
 												<p>Proficient in using SQL such as creating, joining, and querying from SQL databases.</p>
 											</span>
+										</div>
 									</div>
 								</div>
 
 								<div class="resume-wrap d-flex ftco-animate">
-									<div class="col-sm-3 ftco-animate">
-										<h5><strong>Python & Java</strong></h5>
-											<span class="ptab" id="myDIV">
+									<div class="text pl-3">
+										<div class="tab" id="myDIV">
+											<h5><strong>Python & Java</strong></h5>
+										</div>
+										<div class="ptab" id="myDIV">
+											<span>
 												<p>Experienced in using Java and Python to solve real world software problems such as web scraping, 
 												data cleaning, data analysis, and application development.</p>
 											</span>
+										</div>
 									</div>
 								</div>
 
 								<div class="resume-wrap d-flex ftco-animate">
-									<div class="col-sm-3 ftco-animate">
-										<h5><strong>HTML 5</strong></h5>
-											<span class="ptab" id="myDIV">
+									<div class="text pl-3">
+										<div class="tab" id="myDIV">
+											<h5><strong>HTML 5</strong></h5>
+										</div>
+										<div class="ptab" id="myDIV">
+											<span>
 												<p>Experienced in using HTML such as to create and edit sections within this site.</p>
 											</span>
+										</div>
 									</div>
 								</div>
 
 								<div class="resume-wrap d-flex ftco-animate">
-									<div class="col-sm-3 ftco-animate">
-										<h5><strong>Microsoft Products</strong></h5>
-											<span class="ptab" id="myDIV">
+									<div class="text pl-3">
+										<div class="tab" id="myDIV">
+											<h5><strong>Microsoft Products</strong></h5>
+										</div>
+										<div class="ptab" id="myDIV">
+											<span>
 												<p>Advanced knowledge and experience using Microsoft's Office 365 software suit as well as Microsoft Azure.</p>
 											</span>
+										</div>
 									</div>
 								</div>
 
 								<div class="resume-wrap d-flex ftco-animate">
-									<div class="col-sm-3 ftco-animate">
-										<h5><strong>Visual Studio & Eclipse</strong></h5>
-											<span class="ptab" id="myDIV">
+									<div class="text pl-3">
+										<div class="tab" id="myDIV">
+											<h5><strong>Visual Studio & Eclipse</strong></h5>
+										</div>
+										<div class="ptab" id="myDIV">
+											<span>
 												<p>Proficient in using both IDEs to create programs and applications as well as their intergration with GIT.</p>
 											</span>
+										</div>
 									</div>
 								</div>
-								<!-- <div class="resume-wrap d-flex ftco-animate"> -->
-									<!-- <div class="row">
-										<div class="col-sm-3 ftco-animate">
-											<a class="partner"><img src="images/SQLlogo.png" class="img-fluid" alt="Colorlib Template"></a>
+
+								<style>
+									@media (max-width: 900px) {
+									  .hidden-mobile {
+										display: none;
+									  }
+									}
+								</style>
+								<div class="hidden-mobile">
+									<div class="resume-wrap d-flex ftco-animate">
+										<div class="row">
+											<div class="col-sm-3 ftco-animate">
+												<a class="partner"><img src="images/SQLlogo.png" class="img-fluid" alt="Colorlib Template"></a>
+											</div>
+											<div class="col-sm-3 ftco-animate">
+												<a class="partner"><img src="images/PythonLogo.png" class="img-fluid" alt="Colorlib Template"></a>
+											</div>
+											<div class="col-sm-3 ftco-animate">
+												<a class="partner"><img src="images/partner-3.png" class="img-fluid" alt="Colorlib Template"></a>
+											</div>
+											<div class="col-sm-3 ftco-animate">
+												<a class="partner"><img src="images/HTMLlogo.png" class="img-fluid" alt="Colorlib Template"></a>
+											</div>
 										</div>
-										<div class="col-sm-3 ftco-animate">
-											<a class="partner"><img src="images/PythonLogo.png" class="img-fluid" alt="Colorlib Template"></a>
+									</div>
+								
+									<div class="resume-wrap d-flex ftco-animate">
+										<div class="row">
+											<div class="col-sm ftco-animate">
+												<a class="partner"><img src="images/WordLogo.png" class="img-fluid" alt="Colorlib Template"></a>
+											</div>
+											<div class="col-sm ftco-animate">
+												<a class="partner"><img src="images/PowerpointLogo.png" class="img-fluid" alt="Colorlib Template"></a>
+											</div>
+											<div class="col-sm ftco-animate">
+												<a class="partner"><img src="images/ExcelLogo.png" class="img-fluid" alt="Colorlib Template"></a>
+											</div>
+											<div class="col-sm ftco-animate">
+												<a class="partner"><img src="images/AccessLogo.png" class="img-fluid" alt="Colorlib Template"></a>
+											</div>
+											<div class="col-sm ftco-animate">
+												<a class="partner"><img src="images/OutlookLogo.png" class="img-fluid" alt="Colorlib Template"></a>
+											</div>
 										</div>
-										<div class="col-sm-3 ftco-animate">
-											<a class="partner"><img src="images/partner-3.png" class="img-fluid" alt="Colorlib Template"></a>
+									</div>
+								
+									<div class="resume-wrap d-flex ftco-animate">
+										<div class="row">
+											<div class="col-sm-3 ftco-animate">
+												<a class="partner"><img src="images/VisualStudioLogo.png" class="img-fluid" alt="Colorlib Template"></a>
+											</div>
+											<div class="col-sm-3 ftco-animate">
+												<a class="partner"><img src="images/EclipseJavaLogo.png" class="img-fluid" alt="Colorlib Template"></a>
+											</div>
+											<div class="col-sm-3 ftco-animate">
+												<a class="partner"><img src="images/Minitab_Logo.png" class="img-fluid" alt="Colorlib Template"></a>
+											</div>
+											<div class="col-sm-3 ftco-animate">
+												<a class="partner"><img src="images/TableauLogo.png" class="img-fluid" alt="Colorlib Template"></a>
+											</div>
 										</div>
-										<div class="col-sm-3 ftco-animate">
-											<a class="partner"><img src="images/HTMLlogo.png" class="img-fluid" alt="Colorlib Template"></a>
-										</div>
-									</div> -->
-								<!-- </div> -->
-							
-								<!-- <div class="resume-wrap d-flex ftco-animate"> -->
-									<!-- <div class="row">
-										<div class="col-sm ftco-animate">
-											<a class="partner"><img src="images/WordLogo.png" class="img-fluid" alt="Colorlib Template"></a>
-										</div>
-										<div class="col-sm ftco-animate">
-											<a class="partner"><img src="images/PowerpointLogo.png" class="img-fluid" alt="Colorlib Template"></a>
-										</div>
-										<div class="col-sm ftco-animate">
-											<a class="partner"><img src="images/ExcelLogo.png" class="img-fluid" alt="Colorlib Template"></a>
-										</div>
-										<div class="col-sm ftco-animate">
-											<a class="partner"><img src="images/AccessLogo.png" class="img-fluid" alt="Colorlib Template"></a>
-										</div>
-										<div class="col-sm ftco-animate">
-											<a class="partner"><img src="images/OutlookLogo.png" class="img-fluid" alt="Colorlib Template"></a>
-										</div>
-									</div> -->
-								<!-- </div> -->
-							
-								<!-- <div class="resume-wrap d-flex ftco-animate"> -->
-									<!-- <div class="row">
-										<div class="col-sm-3 ftco-animate">
-											<a class="partner"><img src="images/VisualStudioLogo.png" class="img-fluid" alt="Colorlib Template"></a>
-										</div>
-										<div class="col-sm-3 ftco-animate">
-											<a class="partner"><img src="images/EclipseJavaLogo.png" class="img-fluid" alt="Colorlib Template"></a>
-										</div>
-										<div class="col-sm-3 ftco-animate">
-											<a class="partner"><img src="images/Minitab_Logo.png" class="img-fluid" alt="Colorlib Template"></a>
-										</div>
-										<div class="col-sm-3 ftco-animate">
-											<a class="partner"><img src="images/TableauLogo.png" class="img-fluid" alt="Colorlib Template"></a>
-										</div>
-									</div> -->
-								<!-- </div> -->
+									</div>
+								</div>
 							</div>
 						</section> 
 
